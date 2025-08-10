@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">SecretGenerator</string>
+    <string name="app_name">Secret Code Generator</string>
+
+    <!-- Поле ввода -->
+    <string name="hint_password_length">Длина пароля (от 4 до 32)</string>
+    <string name="desc_password_length">Длина пароля</string>
+
+    <!-- Чекбоксы -->
+    <string name="checkbox_special_symbols">Использовать специальные символы</string>
+    <string name="checkbox_lowercase">Использовать строчные буквы</string>
+    <string name="checkbox_uppercase">Использовать заглавные буквы</string>
+
+    <!-- Описания для чекбоксов -->
+    <string name="desc_special_symbols">Включает специальные символы в пароль</string>
+    <string name="desc_lowercase">Включает строчные буквы в пароль</string>
+    <string name="desc_uppercase">Включает заглавные буквы в пароль</string>
+
+    <!-- Результат -->
+    <string name="text_password_output">Пароль появится здесь</string>
+    <string name="desc_password_output">Вывод сгенерированного пароля</string>
+
+    <!-- Кнопки -->
+    <string name="button_generate">СГЕНЕРИРОВАТЬ</string>
+    <string name="button_copy">КОПИРОВАТЬ</string>
 </resources>

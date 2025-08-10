@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:startIconDrawable="@drawable/ic_password"
-            android:hint="Длина пароля (от 4 до 32 )"
+            android:hint="@string/hint_password_length"
             android:layout_marginBottom="12dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -29,61 +29,61 @@
                 android:inputType="number"
                 android:maxLength="2"
                 android:textColor="#000000"
-                android:contentDescription="Длина пароля"/>
+                android:contentDescription="@string/desc_password_length"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Чекбоксы: иконка слева, галочка справа -->
+        <!-- Чекбоксы -->
         <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/useSpecialSymbols"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Использовать специальные символы"
+            android:text="@string/checkbox_special_symbols"
             android:drawableStart="@drawable/ic_symbols"
             android:drawablePadding="12dp"
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
-            android:contentDescription="Использовать специальные символы" />
+            android:contentDescription="@string/desc_special_symbols" />
 
         <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/useLowercase"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Использовать строчные буквы"
+            android:text="@string/checkbox_lowercase"
             android:drawableStart="@drawable/ic_lowercase"
             android:drawablePadding="12dp"
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
-            android:contentDescription="Использовать строчные буквы" />
+            android:contentDescription="@string/desc_lowercase" />
 
         <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/useUppercase"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Использовать заглавные буквы"
+            android:text="@string/checkbox_uppercase"
             android:drawableStart="@drawable/ic_uppercase"
             android:drawablePadding="12dp"
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
-            android:contentDescription="Использовать заглавные буквы" />
+            android:contentDescription="@string/desc_uppercase" />
 
         <!-- Результат -->
         <TextView
             android:id="@+id/passwordOutput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Пароль появится здесь"
+            android:text="@string/text_password_output"
             android:textSize="18sp"
             android:textColor="#3D3D3D"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="12dp"
-            android:contentDescription="Вывод пароля" />
+            android:contentDescription="@string/desc_password_output" />
 
         <!-- Кнопки -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/generateButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="СГЕНЕРИРОВАТЬ"
+            android:text="@string/button_generate"
             android:layout_marginTop="8dp"
             app:icon="@drawable/ic_generate"
             app:iconGravity="textStart"
@@ -95,7 +95,7 @@
             android:id="@+id/copyButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="КОПИРОВАТЬ"
+            android:text="@string/button_copy"
             android:layout_marginTop="8dp"
             app:icon="@drawable/ic_copy"
             app:iconGravity="textStart"
@@ -104,3 +104,4 @@
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
+
